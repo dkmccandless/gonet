@@ -17,7 +17,7 @@ import (
 // https://html.spec.whatwg.org/multipage/syntax.html#tree-construction
 type parser struct {
 	// tokenizer provides the tokens for the parser.
-	tokenizer *Tokenizer
+	tokenizer TokenStream
 	// tok is the most recently read token.
 	tok Token
 	// Self-closing tags like <hr/> are treated as start tags, except that
